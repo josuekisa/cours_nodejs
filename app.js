@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
 const {resolve} = require('path');
-const router = require("./routing")
+const router = require("./routing/index")
 
 
 
 //config
-app.use(express.static(resolve('static')))
-app.use(router)
+app.use(express.static(resolve('static')));
+app.use(router);
  
 
 

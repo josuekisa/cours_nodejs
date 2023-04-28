@@ -1,7 +1,7 @@
-const express = require('express');
-const router = express.Router();
+
+
 const {resolve}= require('path');
-//Controller 1
+
 
 const homePage = (req,res)=>{
     res.sendFile(resolve('home.html'))
